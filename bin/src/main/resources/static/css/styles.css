@@ -1,0 +1,54 @@
+
+.logo{
+    text-align: center;
+
+}
+
+.logo h4{
+    font-size: 35px;
+    color: dodgerblue;
+    /*边距*/
+    margin: 10px 0px 10px 0px;
+    /*字间距*/
+    letter-spacing: 8px;
+}
+
+.logo p{
+
+}
+
+.nav{
+    border-top: 3px solid #cccc;
+    border-bottom: 3px solid #cccc;
+}
+
+.nav ul{
+    /*弹性布局*/
+    display: flex;
+    /*居中*/
+    justify-content: center;
+
+}
+
+.nav ul li{
+    list-style: none;
+    /*边距，上右下左*/
+    margin: 0px 30px;
+}
+
+.nav ul li a{
+    /*a标签字体颜色*/
+    color: blueviolet;
+    /*字体大小*/
+    font-size: 20px;
+    /*下划线属性 a标签去除下划线*/
+    text-decoration: none;
+}
+
+.banner{
+    margin: auto;
+    width: 1250px;
+}
+.banner img{
+    width: 100%;
+}

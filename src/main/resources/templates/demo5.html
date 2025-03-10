@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org">
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul th:each="user:${userList}">
+    <li th:text="${user.id}"></li>
+    <li th:text="${user.username}"></li>
+    <li th:text="${user.password}"></li>
+
+</ul>
+
+<h2>列表数据:<br>
+    <ul>
+        <li th:each="user,state:${userList}">
+            <!--当前的遍历索引，从1开始-->
+            state count:<span th:text="${state.count}"></span><br>
+            <!--当前遍历是否为偶数次遍历-->
+            state odd:<span th:text="${state.odd}"></span><br>
+            <!--当前遍历是否为奇数次遍历-->
+            state even:<span th:text="${state.even}"></span><br>
+            <!--集合元素的总个数-->
+            state size:<span th:text="${state.size}"></span><br>
+
+            id:<span th:text="${user.id}"></span><br>
+            username:<span th:text="${user.username}"></span><br>
+            password:<span th:text="${user.password}"></span><br>
+        </li>
+    </ul>
+</h2>
+</body>
+</html>

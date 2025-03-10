@@ -1,0 +1,16 @@
+server:
+  port: 8084
+
+
+
+
+user:
+  age: 18
+  books-name: 三国演义
+  book:
+    bookName: 计算机基础
+    bookPrice: 102
+
+
+
+

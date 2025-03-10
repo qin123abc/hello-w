@@ -1,0 +1,40 @@
+server:
+  port: 8080
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/zyg
+    username: root
+    password: 123456
+    # Redis配置
+    redis:
+      # Redis服务器地址
+      host: 127.0.0.1
+      # Redis服务器连接端口
+      port: 6379
+      # Redis服务器连接密码（默认为空）
+      password: 123456..
+      # 连接超时时间（毫秒）
+      timeout: 1800000
+      # Redis数据库索引（默认为0）
+      database: 0
+      # 连接池驱动的配置
+
+
+
+  thymeleaf:
+    cache: false # 关闭页面缓存
+    suffix: .html # 构建url时附加到查看的名称后缀
+    prefix: classpath:/templates/ #页面映射路径
+
+
+
+mybatis:
+  type-aliases-package: springboot_maven.pojo #别名
+  mapper-locations: classpath:/mybatis/*.xml   #xml文件路径
+
+
+
+
